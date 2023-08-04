@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="regester from.css">
+</head>
+
+<body text="blue">
+   <center><img src="download23.png"  width="100" height="100" style="border: 1px solid black;"></center> 
+    <h1><b>Registration Form</b></h1>
+    <form action="https://formspree.io/f/mnqkjrnn" method="post">       
+          <div class="frame">
+    <img src="image.jpg" alt="Image">
+    <input type="file" name="image" id="image">
+    <input type="submit" value="Upload Image">
+  </div>
+        
+        <label for="name">Name</label>
+        <input type="text" name="name" required>
+        <label for="email">Email</label>
+        <input type="email" name="email" required>
+
+        <label for="phone number">Phone Number</label>
+        <input type="tel" name="tel" required><br>
+        Course:<br>
+        <input type="checkbox" id="CSE" name="CSE" value="CSE">Computer Science<br>
+        <input type="checkbox" id="EEE" name="EEE" value="EEE">Elecrtical and Electronics<br>
+        <input type="checkbox" id="IT" name="IT" value="IT">Information Technology<br>
+        <input type="checkbox" id="Others" name="Others" value="Others">Others<br>
+
+        <label for="gender">Gender</label>
+        <select id="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="others">Others</option>
+        </select>
+
+        <label for="birthday">Date of Birth</label>
+        <input type="date" id="birthday" name="birthday">
+
+        <label for="birthdaytime">Joining date & time</label>
+        <input type="datetime-local" id="birthdaytime" name="birthday">
+
+        <label for="Subject">Choose a sub</label>
+        <select name="Subject">
+            <optgroup label="CS">
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="C programming">Java</option>
+                <option value="C ++">Java</option>
+            </optgroup>
+        </select>
+        <center><label for="qualification"><b>Qualification</b></label>
+            <table border="2" class="center">
+                <tr>
+                    <th align="center"><b>Sl.No.</b></th>
+                    <th align="center"><b>Qualification</b></th>
+                    <th align="center"><b>Board</b></th>
+                    <td align="center"><b>Percentage</b></td>
+                    <td align="center"><b>Year of Passing</b></td>
+                </tr>
+                <tr>
+                    <td>
+                        <font color="blue">1</font>
+                    </td>
+                    <td>
+                        <font color="blue">SSC</font>
+                    </td>
+                    <td><input type="text" name="SSC_Board" maxlength="30" /></td>
+                    <td><input type="text" name="SSC_Percentage" maxlength="30" /></td>
+                    <td><input type="text" name="SSC_YearOfPassing" maxlength="30" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <font color="blue">2</font>
+                    </td>
+                    <td>
+                        <font color="blue">Intermediate</font>
+                    </td>
+                    <td><input type="text" name="Intermediate_Board" maxlength="30" /></td>
+                    <td><input type="text" name="Intermediate_Percentage" maxlength="30" /></td>
+                    <td><input type="text" name="Intermediate_YearOfPassing" maxlength="30" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <font color="blue">3</font>
+                    </td>
+                    <td>
+                        <font color="blue">Graduation</font>
+                    </td>
+                    <td><input type="text" name="Graduation_Board" maxlength="30" /></td>
+                    <td><input type="text" name="Graduation_Percentage" maxlength="30" /></td>
+                    <td><input type="text" name="Graduation_YearOfPassing" maxlength="30" /></td>
+                </tr>
+            </table>
+        </center>
+        <fieldset>
+            <legend>About</legend>
+            <label for="about"></label>
+            <input type="textarea" name="about">
+
+        </fieldset>
+        <output name="name"></output>
+
+        <div id="submit">
+            <input type="submit" value="Register" required>
+            <input type="button" onclick="cancel" value="cancel">
+        </div>
+
+    </form>
+</body>
+
+</html>
